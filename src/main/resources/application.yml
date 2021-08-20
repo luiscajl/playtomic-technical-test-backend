@@ -1,6 +1,6 @@
 spring.profiles.active: develop
 server:
-  port: 8090
+  port: 8098
 ---
 spring:
   profiles: develop
