@@ -3,9 +3,6 @@ on:
   push:
     branches:
       - 'main'
-defaults:
-  run:
-    working-directory: lavanda-automated-download-films
 jobs:
   test:
     runs-on: ubuntu-latest
@@ -16,5 +13,5 @@ jobs:
         with:
           java-version: '15'
           distribution: 'adopt'
-      - name: Build Maven
+      - name: Maven test
         run: mvn test
